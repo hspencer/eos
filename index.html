@@ -16,26 +16,39 @@
 		</div>
 		<div class='block'>
 			<h3>Config Space</h3>
-			<form action='post'>
+
 			<div class='input-group'>
-			<label for='space-nodes'>number of nodes</label>
-					<input type='number' name='space-nodes' id='sn' placeholder='Number of nodes' value='0'>
-				</div>
-				<hr>
-				<div class='input-group'>
-				<label for='space-x'>width</label>
-					<input type='number' name='space-x' id='sx' placeholder='width (in meters)' value='2'>
-				</div>
-				<div class='input-group'>
-					<label for='space-y'>height</label>
-					<input type='number' name='space-y' id='sy' placeholder='height' value='2'>
-				</div>
-				<div class='input-group'>
-					<label for='space-z'>depth</label>
-					<input type='number' name='space-z' id='sz' placeholder='depth' value='2'>
-				</div>
-			</form>
+			<label for='space-x'>width</label>
+				<input type='range' name='space-x' id='sx' value='2' min='2' max='20' step='.5'>
+			</div>
+			<div class='input-group'>
+				<label for='space-y'>height</label>
+				<input type='range' name='space-y' id='sy' value='2' min='2' max='20' step='.5'>
+			</div>
+			<div class='input-group'>
+				<label for='space-z'>depth</label>
+				<input type='range' name='space-z' id='sz' value='2' min='2' max='20' step='.5'>
+			</div>
+
 			<div id='space'></div>
+
+			<button class='btn'>new light node</button>
+			
+		</div>
+		<div class="block node">
+			<div class='input-group'>
+				<label for='node-1-name'>node name</label>
+				<input type='text' name='node-1-name' id='n1n' placeholder='name'>
+			</div>
+			<label class="switch">
+				<input type="checkbox" checked>
+				<div class="slider"></div>
+			</label>
+							
+			<div class='input-group'>
+				<label for='node-1-color'>light color</label>
+				<input type='color' name='node-1-color' id='n1c' value="#FFCC00">
+			</div>
 		</div>
 	</div>
 </body>
