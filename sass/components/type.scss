@@ -1,0 +1,145 @@
+
+
+body{
+	font-family: $font-family-base;
+	font-size: $fs;
+	margin: 0;
+}
+
+#space{
+	width: 100%;
+	min-height: 10px;
+	background-color: $col-gr;
+	border-radius: $rad;
+}
+
+.node{
+	background-color: $col-gr;
+	border-radius: $rad;
+	padding: 0 $fs;
+}
+
+.input-group{
+	margin: $fs 0;
+	label{
+		font-size: .9rem;
+		font-weight: bolder;
+		display: block;
+		margin: $fs/2 $fs/2 $fs/2 0;
+	}
+	input{
+		font-size: $fs;
+		padding: $fs/2 $fs/4;
+		border: 1px solid $col-gr;
+		border-radius: $rad;
+		&[type=text]{
+			width: 100%;
+		}
+		&[type=number]{
+			width: 5rem;
+		}
+
+		&[type=range]{
+			padding: 0;
+			margin: 0;
+			-webkit-appearance: none;
+			block-size: $fs;
+			width: 100%;
+			&:focus{
+				outline: none;
+				&::-webkit-slider-runnable-track{
+					background: #ccc;
+				}
+			}
+			&::-webkit-slider-runnable-track{
+				width: 100%;
+			    height: 5px;
+			    background: #ddd;
+			    border: none;
+			    border-radius: 3px;
+			}
+			&::-webkit-slider-thumb {
+				-webkit-appearance: none;
+			    border: none;
+			    height: 16px;
+			    width: 16px;
+			    border-radius: 50%;
+			    background: $col-ac;
+			    margin-top: -4px;
+			}
+		}
+
+		&[type=color]{
+			padding: $fs/5;
+			height: $fs*2;
+			width: $fs*3;
+			* {
+				width: $sw;
+				height: $sw;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+
+.btn, button{
+	font-size: $fs;
+	padding: $fs/4 $fs/2;
+	border: 1px solid darken($col-ac, 5);
+	background-color: $col-ac;
+	border-radius: $rad;
+	margin: $fs 0 0 0;
+	letter-spacing: -.13ex;
+	&:hover{
+		background-color: saturate($col-ac, 30%);
+	}
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: $sw*2;
+  height: $sw*1.2;
+  
+}
+
+
+.switch input[type=checkbox] {
+	display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $col-gr;
+  transition: .4s;
+  border-radius: $fs;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: $sw * .8;
+  width: $sw * .8;
+  left: $sw * .2;
+  border-radius: 50%;
+  bottom: $sw * .2;
+  background-color: white;
+  transition: .4s;
+}
+
+input[type=checkbox]:checked + .slider {
+  background-color: $col-ac;
+}
+
+input[type=checkbox]:focus + .slider {
+  box-shadow: 0 0 1px $col-ac;
+}
+
+input[type=checkbox]:checked + .slider:before {
+  transform: translateX($sw * .8);
+}

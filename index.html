@@ -2,52 +2,56 @@
 <head>
 	<meta charset='UTF-8'>
 	<title>tesape</title>
-	<link rel='stylesheet' href='sass/tesape.css'>
+	<link rel='stylesheet' href='css/tesape.css'>
 	<meta name='viewport' content='width=device-width, user-scalable=no'>
 	<script src='js/p5.js' type='text/javascript'></script>
 	<script src='js/p5.dom.js' type='text/javascript'></script>
 	<script src='js/space.js' type='text/javascript'></script>
 </head>
 <body>
-	<div class='container'>
-		<div class='block'>
-			<h1 class='title'>tesape</h1>
-			<p class='tagline'>lighting mesh for the masses</p>
+	<div class='container container-fixed'>
+		<div class='row'>
+			<div class="col-md-4">
+				<h1 class='title'>tesape</h1>
+				<p class='tagline'>lighting mesh for the masses</p>
+			</div>
 		</div>
-		<div class='block'>
-			<h3>Config Space</h3>
-
-			<div class='input-group'>
-			<label for='space-x'>width</label>
-				<input type='range' name='space-x' id='sx' value='2' min='2' max='20' step='.5'>
+		<div class='row'>
+			<div class="col-sm-4">
+				<h3>Config Space</h3>
+				<div class='input-group'>
+				<label for='space-x'>width</label>
+					<input type='range' name='space-x' id='sx' value='2' min='2' max='20' step='.5'>
+				</div>
+				<div class='input-group'>
+					<label for='space-y'>height</label>
+					<input type='range' name='space-y' id='sy' value='2' min='2' max='20' step='.5'>
+				</div>
+				<div class='input-group'>
+					<label for='space-z'>depth</label>
+					<input type='range' name='space-z' id='sz' value='2' min='2' max='20' step='.5'>
+				</div>
+				<button class='btn'>new light node</button>
 			</div>
-			<div class='input-group'>
-				<label for='space-y'>height</label>
-				<input type='range' name='space-y' id='sy' value='2' min='2' max='20' step='.5'>
+			<div class="col-sm-8">
+				<div id='space'></div>
 			</div>
-			<div class='input-group'>
-				<label for='space-z'>depth</label>
-				<input type='range' name='space-z' id='sz' value='2' min='2' max='20' step='.5'>
-			</div>
-
-			<div id='space'></div>
-
-			<button class='btn'>new light node</button>
-			
 		</div>
-		<div class="block node">
-			<div class='input-group'>
-				<label for='node-1-name'>node name</label>
-				<input type='text' name='node-1-name' id='n1n' placeholder='name'>
-			</div>
-			<label class="switch">
-				<input type="checkbox" checked>
-				<div class="slider"></div>
-			</label>
-							
-			<div class='input-group'>
-				<label for='node-1-color'>light color</label>
-				<input type='color' name='node-1-color' id='n1c' value="#FFCC00">
+		<div class="row">
+			<div class='col-lg-3 col-md-4 col-sm-6 node'>
+				<div class='input-group'>
+					<label for='node-1-name'>node name</label>
+					<input type='text' name='node-1-name' id='n1n' placeholder='name'>
+				</div>
+				<label class="switch">
+					<input type="checkbox" checked>
+					<div class="slider"></div>
+				</label>
+								
+				<div class='input-group'>
+					<label for='node-1-color'>light color</label>
+					<input type='color' name='node-1-color' id='n1c' value="#FFCC00">
+				</div>
 			</div>
 		</div>
 	</div>

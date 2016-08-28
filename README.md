@@ -21,16 +21,15 @@
 |               | Rotor 2       |               |
 
 
-Compile styles with:
+Para compilar las cascadas de estilo:
 
 ```
-sass --watch sass
+sass --watch sass/tesape.scss:css/tesape.css
 ```
 
 
-#### Dependencies
-* (https://github.com/denilsonsa/html5-knob)[<x-knob> Web Component]
-* (https://github.com/Selz/rangetouch)[Rangetouch]
+#### Dependencias
 
-not this one:
-* (https://github.com/aterrien/jQuery-Knob)[JQuery-Knob], with Jquey
+* [https://github.com/denilsonsa/html5-knob](<x-knob> Web Component)
+* [https://github.com/Selz/rangetouch](Rangetouch)
+* [https://github.com/andreruffert/rangeslider.js](rangeslider.js) - jquery
