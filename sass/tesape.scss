@@ -1,0 +1,59 @@
+/* tesape */
+
+$fs:	18px;
+$bp: 	768px;
+
+body{
+	font-family: Helvetica;
+	font-size: $fs;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+input{
+	font-size: $fs;
+	padding: $fs/2 $fs/4;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 4px;
+	&[type=number]{
+		width: 5rem;
+	}
+}
+
+#space{
+	width: 100%;
+	min-height: 10px;
+	background-color: #EAE9E4;
+	border-radius: 4px;
+}
+
+.container{
+	display: block;
+	width: 100%;
+	.block{
+		display: inline-block;
+	}	
+}
+
+.input-group{
+	margin: $fs $fs $fs 0;
+	display: inline-block;
+	label{
+		font-size: .9rem;
+		font-weight: bolder;
+		display: block;
+		margin: $fs/2 $fs/2 $fs/2 0;
+	}
+}
+
+@media (min-width: $bp+1){
+	.block{
+		width: 33%;
+	}
+}
+
+@media (max-width: $bp){
+	.block{
+		width: 100%;
+	}
+}

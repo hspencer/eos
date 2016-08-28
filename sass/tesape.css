@@ -1,0 +1,44 @@
+/* tesape */
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  margin: 0;
+  box-sizing: border-box; }
+
+input {
+  font-size: 18px;
+  padding: 9px 4.5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  input[type=number] {
+    width: 5rem; }
+
+#space {
+  width: 100%;
+  min-height: 10px;
+  background-color: #EAE9E4;
+  border-radius: 4px; }
+
+.container {
+  display: block;
+  width: 100%; }
+  .container .block {
+    display: inline-block; }
+
+.input-group {
+  margin: 18px 18px 18px 0;
+  display: inline-block; }
+  .input-group label {
+    font-size: .9rem;
+    font-weight: bolder;
+    display: block;
+    margin: 9px 9px 9px 0; }
+
+@media (min-width: 769px) {
+  .block {
+    width: 33%; } }
+@media (max-width: 768px) {
+  .block {
+    width: 100%; } }
+
+/*# sourceMappingURL=tendy.css.map */

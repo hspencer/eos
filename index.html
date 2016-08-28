@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>tesape</title>
+	<link rel='stylesheet' href='sass/tesape.css'>
+	<meta name='viewport' content='width=device-width, user-scalable=no'>
+	<script src='js/p5.js' type='text/javascript'></script>
+	<script src='js/p5.dom.js' type='text/javascript'></script>
+	<script src='js/space.js' type='text/javascript'></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='block'>
+			<h1 class='title'>tesape</h1>
+			<p class='tagline'>lighting mesh for the masses</p>
+		</div>
+		<div class='block'>
+			<h3>Config Space</h3>
+			<form action='post'>
+			<div class='input-group'>
+			<label for='space-nodes'>number of nodes</label>
+					<input type='number' name='space-nodes' id='sn' placeholder='Number of nodes' value='0'>
+				</div>
+				<hr>
+				<div class='input-group'>
+				<label for='space-x'>width</label>
+					<input type='number' name='space-x' id='sx' placeholder='width (in meters)' value='2'>
+				</div>
+				<div class='input-group'>
+					<label for='space-y'>height</label>
+					<input type='number' name='space-y' id='sy' placeholder='height' value='2'>
+				</div>
+				<div class='input-group'>
+					<label for='space-z'>depth</label>
+					<input type='number' name='space-z' id='sz' placeholder='depth' value='2'>
+				</div>
+			</form>
+			<div id='space'></div>
+		</div>
+	</div>
+</body>
+</html>
