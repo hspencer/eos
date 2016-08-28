@@ -20,7 +20,17 @@
 |               | Rotor 1       |               |
 |               | Rotor 2       |               |
 
-Para compilar las CSS:
+
+Compile styles with:
+
 ```
 sass --watch sass
 ```
+
+
+#### Dependencies
+* (https://github.com/denilsonsa/html5-knob)[<x-knob> Web Component]
+* (https://github.com/Selz/rangetouch)[Rangetouch]
+
+not this one:
+* (https://github.com/aterrien/jQuery-Knob)[JQuery-Knob], with Jquey

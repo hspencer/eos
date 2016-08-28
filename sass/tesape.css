@@ -1,10 +1,12 @@
 /* tesape */
 @import "https://fonts.googleapis.com/css?family=Bitter:400,400i,700";
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: Bitter;
   font-size: 18px;
-  margin: 0;
-  box-sizing: border-box; }
+  margin: 0; }
 
 #space {
   width: 100%;
@@ -14,7 +16,8 @@ body {
 
 .container {
   display: block;
-  position: relative; }
+  position: relative;
+  padding: 0; }
   .container .block {
     position: relative;
     display: inline-block;
@@ -23,10 +26,11 @@ body {
     margin: 0; }
     .container .block.node {
       background-color: #EAE9E4;
-      border-radius: 3.6px; }
+      border-radius: 3.6px;
+      padding: 0 18px; }
 
 .input-group {
-  margin: 18px 18px 18px 0; }
+  margin: 18px 0; }
   .input-group label {
     font-size: .9rem;
     font-weight: bolder;
@@ -37,6 +41,8 @@ body {
     padding: 9px 4.5px;
     border: 1px solid #EAE9E4;
     border-radius: 3.6px; }
+    .input-group input[type=text] {
+      width: 100%; }
     .input-group input[type=number] {
       width: 5rem; }
     .input-group input[type=range] {
@@ -125,10 +131,10 @@ input[type=checkbox]:checked + .slider:before {
 
 @media (min-width: 961px) {
   .container {
-    max-width: 900px;
+    width: 900px;
     margin: 0 auto; }
     .container .block {
-      width: 298px; } }
+      width: 295px; } }
 @media (max-width: 960px) {
   .container {
     margin: 0 28px; }

@@ -9,11 +9,14 @@ $col-ac:	#D7C20B;	// color active
 
 @import 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700';
 
+* {
+	box-sizing: border-box;
+}
+
 body{
 	font-family: Bitter;
 	font-size: $fs;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 #space{
@@ -26,6 +29,7 @@ body{
 .container{
 	display: block;
 	position: relative;
+	padding: 0;
 	.block{
 		position: relative;
 		display: inline-block;
@@ -36,12 +40,13 @@ body{
 		&.node{
 			background-color: $col-gr;
 			border-radius: $rad;
+			padding: 0 $fs;
 		}
 	}	
 }
 
 .input-group{
-	margin: $fs $fs $fs 0;
+	margin: $fs 0;
 	label{
 		font-size: .9rem;
 		font-weight: bolder;
@@ -53,6 +58,9 @@ body{
 		padding: $fs/2 $fs/4;
 		border: 1px solid $col-gr;
 		border-radius: $rad;
+		&[type=text]{
+			width: 100%;
+		}
 		&[type=number]{
 			width: 5rem;
 		}
@@ -165,16 +173,14 @@ input[type=checkbox]:checked + .slider:before {
 
 @media (min-width: $bp+1){
 	.container{
-		max-width: $bp - 60;
+		width: 900px;
 		margin: 0 auto;
 		.block{
-			width: ($bp - 60)/3 - 2px;
+			width: 295px;
 			&:first-child{
-				//padding: 0 0 0 2*$sw;
 			}
 		}
 	}
-	
 }
 
 @media (max-width: $bp){
