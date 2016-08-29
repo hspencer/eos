@@ -1,0 +1,51 @@
+/* Checkbox switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: $sw*2;
+  height: $sw*1.2;
+}
+
+
+.switch input[type=checkbox] {
+	display: none;
+}
+
+.switch-background {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darken($col-gr, 10%);
+  transition: .4s;
+  border-radius: $fs;
+  box-shadow: inset 0 0 5px 0 transparentize(black, .8);
+}
+
+.switch-background:before {
+  position: absolute;
+  content: "";
+  height: $sw * .8;
+  width: $sw * .8;
+  left: $sw * .2;
+  border-radius: 50%;
+  bottom: $sw * .2;
+  background-color: white;
+  transition: .4s;
+  box-shadow: 0 0 5px 0 transparentize(black, .8);
+}
+
+input[type=checkbox]:checked + .switch-background {
+  background-color: $col-ac;
+}
+
+input[type=checkbox]:focus + .switch-background {
+  box-shadow: 0 0 1px $col-ac;
+}
+
+input[type=checkbox]:checked + .switch-background:before {
+  transform: translateX($sw * .8);
+}

@@ -28,8 +28,7 @@ sass --watch sass/tesape.scss:css/tesape.css
 ```
 
 
-#### Dependencias
-
-* [https://github.com/denilsonsa/html5-knob](<x-knob> Web Component)
-* [https://github.com/Selz/rangetouch](Rangetouch)
-* [https://github.com/andreruffert/rangeslider.js](rangeslider.js) - jquery
+#### Dependencias de interfaz gráfica
+* JQuery
+* [https://github.com/andreruffert/rangeslider.js](rangeslider.js) 
+* [https://github.com/aterrien/jQuery-Knob](JQuery-Knob)

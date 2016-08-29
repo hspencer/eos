@@ -1,0 +1,14 @@
+{
+  "name": "tesape",
+  "version": "0.0.1",
+  "main": "index.html",
+  "description": "mesh lighting for the masses",
+  "license": "Artistic 2.0",
+  "ignore": [],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "jquery-knob": "1.2.13",
+    "rangeslider.js": "2.2.1"
+  },
+  "devDependencies": {}
+}
