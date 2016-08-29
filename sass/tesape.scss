@@ -1,8 +1,7 @@
 /* tesape */
 
-
+@charset "utf-8";
 @import 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700';
-
 @import "components/normalize";
 @import "components/variables";
 @import "components/scaffolding";
@@ -10,3 +9,4 @@
 @import "components/grid";
 @import "components/responsive";
 @import "components/type";
+@import "components/rangeslider";
