@@ -32,3 +32,4 @@ sass --watch sass/tesape.scss:css/tesape.css
 * JQuery
 * [https://github.com/andreruffert/rangeslider.js](rangeslider.js) 
 * [https://github.com/aterrien/jQuery-Knob](JQuery-Knob)
+* [https://github.com/zzzhan/bootstrap-colorpicker-plus/](Color Picker Plus)
