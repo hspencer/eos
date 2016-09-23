@@ -1,0 +1,30 @@
+{
+  "name": "tesape",
+  "version": "1.0.0",
+  "description": "mesh lighting for the mases",
+  "main": "index.html",
+  "dependencies": {
+    "semantic-ui": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hspencer/tesape.git"
+  },
+  "keywords": [
+    "light",
+    "iot",
+    "control",
+    "domotics",
+    "illumination"
+  ],
+  "author": "Herbert Spencer, Rodrigo Moya, Pedro Garretón",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hspencer/tesape/issues"
+  },
+  "homepage": "https://github.com/hspencer/tesape#readme"
+}

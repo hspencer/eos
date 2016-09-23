@@ -8,7 +8,9 @@
   "dependencies": {
     "jquery": ">=1.7.0",
     "jquery-knob": "1.2.13",
-    "rangeslider.js": "2.2.1"
+    "rangeslider.js": "2.2.1",
+    "Colorplane": "https://github.com/danielzarick/Colorplane",
+    "bootstrap": "4.0.0-alpha.3"
   },
   "devDependencies": {}
 }
